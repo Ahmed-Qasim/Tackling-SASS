@@ -60,8 +60,7 @@
                 flex-direction: row;
                 justify-content: space-around;
                 width: 70%;
-                align-items: center; 
-                
+                align-items: center;
             }
 
             li {
@@ -90,4 +89,11 @@
             }
         }
     }
+}
+.flex-navbar {
+    display: flex !important; 
+}
+
+.none-navbar {
+    display: none !important; 
 }

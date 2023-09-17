@@ -259,10 +259,13 @@
         </div>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script>
+            // $(".toggler").on("click", function () {
+            //     $(".navbar").css("display", function (_, currentValue) {
+            //         return currentValue === "none" ? "flex" : "none";
+            //     });
+            // });
             $(".toggler").on("click", function () {
-                $(".navbar").css("display", function (_, currentValue) {
-                    return currentValue === "none" ? "flex" : "none";
-                });
+                $(".navbar").toggleClass("hide-navbar flex-navbar");
             });
         </script>
     </body>

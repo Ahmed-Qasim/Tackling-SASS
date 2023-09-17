@@ -98,6 +98,14 @@
   color: #ddd;
 }
 
+.flex-navbar {
+  display: flex !important;
+}
+
+.none-navbar {
+  display: none !important;
+}
+
 .head-with-border {
   position: relative;
 }
