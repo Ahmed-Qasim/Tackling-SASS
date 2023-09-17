@@ -1,0 +1,129 @@
+.slider {
+    blockquote {
+        font: {
+            size: 20;
+            style: italic;
+            weight: bold;
+            family: tahoma, Arial;
+        }
+        line-height: 1.7;
+        text-align: center;
+        color: #5e5e5e;
+        width: 80%0;
+        margin: 30px auto;
+    }
+    img {
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+    }
+    .bullets {
+        text-align: center;
+        li {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-color: $greyColor;
+            border-radius: 50%;
+            border: 3px solid $greyColor;
+            cursor: pointer;
+            &.active,
+            &:hover {
+                background-color: #fff;
+                border: 3px solid black;
+            }
+        }
+    }
+}
+
+// service
+.services {
+    .cards {
+        width: 100%;
+        display: flex;
+        gap: 20px;
+        @media #{$maxSmall} {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .service-box {
+            .service-title {
+                color: #666;
+                font-size: 25px;
+                flex-shrink: 1;
+                margin-left: 5px;
+
+                i {
+                    font-size: 35px;
+                    top: 4;
+                }
+            }
+            p {
+                color: #777;
+                line-height: 1.6;
+            }
+            a {
+                color: $redColor;
+                text-decoration: none;
+            }
+        }
+    }
+}
+// players
+.players {
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 10px;
+
+        .player-box {
+            box-sizing: border-box;
+            @media #{$minSmall} {
+                width: calc((100% - 100px) / 2)
+            }
+            @media #{$minMedium} {
+                width: calc((100% - 100px) / 3)
+            }
+            @media #{$minLarge} {
+                width: calc((100% - 50px) / 5);
+            }
+
+            .player-title {
+                color: #666;
+                font-size: 25px;
+                margin-left: 5px;
+                font-weight: normal;
+                span {
+                    font-weight: bold;
+                }
+            }
+            img {
+                width: 100%;
+            }
+            p {
+                color: #777;
+                line-height: 1.6;
+            }
+            a {
+                color: $redColor;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+// players
+.pics {
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        flex: 1 1 150px;
+        justify-content: space-around;
+        gap: 20px;
+        img {
+            width: 100%;
+        }
+    }
+}

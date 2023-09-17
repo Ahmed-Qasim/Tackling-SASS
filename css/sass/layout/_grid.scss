@@ -1,0 +1,38 @@
+* {
+    @include prefixer(box-sizing, border-box, web-kit moz);
+}
+.container {
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    @media #{$minSmall} {
+        width: 750px;
+    }
+    @media #{$minMedium} {
+        width: 970px;
+    }
+
+    @media #{$minLarge} {
+        width: 1170px;
+    }
+}
+
+// .container {
+//     margin: auto;
+//     padding-left: 15px;
+//     padding-right: 15px;
+//     position: relative;
+
+//     @media #{$maxLarge} {
+//         width: 1170px;
+//     }
+
+//     @media #{$maxMedium} {
+//         width: 970px;
+//     }
+
+//     @media #{$maxSmall} {
+//         width: 600px;
+//     }
+// }

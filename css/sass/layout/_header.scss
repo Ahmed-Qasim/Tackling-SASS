@@ -1,0 +1,93 @@
+.header {
+    padding: 10px 0;
+    border-bottom: 1px solid $greyColor;
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        .logo {
+            @media #{$maxSmall} {
+                width: 100%;
+                text-align: center;
+            }
+            width: 30%;
+            h1 {
+                margin-bottom: 0;
+                margin-left: 0;
+            }
+        }
+
+        .toggler {
+            position: absolute;
+            top: 30px;
+            right: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            background-color: $redColor;
+            padding: 8px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            display: none;
+
+            @media #{$maxSmall} {
+                display: flex;
+            }
+            span {
+                width: 50px;
+                height: 5px;
+                border-radius: 3px;
+                background-color: white;
+            }
+        }
+        .navbar {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            width: 70%;
+            align-items: center;
+
+            @media #{$maxSmall} {
+                width: 100%;
+                flex-direction: column;
+                text-align: center;
+                display: none;
+            }
+            @media #{$minSmall} {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                width: 70%;
+                align-items: center; 
+                
+            }
+
+            li {
+                min-width: 15%;
+                font-size: 18px;
+                text-align: center;
+                background-color: $redColor;
+                border-radius: 7px;
+                @media #{$minSmall} {
+                    font-size: 16px;
+                }
+                @media #{$maxSmall} {
+                    margin-bottom: 2px;
+                    width: 100%;
+                }
+
+                a {
+                    display: block;
+                    padding: 20px 10px;
+                    color: #fff;
+                    text-decoration: none;
+                    &:hover {
+                        color: #ddd;
+                    }
+                }
+            }
+        }
+    }
+}
